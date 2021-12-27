@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { EditButton } from "./components/EditButton";
+import { EditButton } from "./EditButton";
 
 const style = {
   width: "300px",
@@ -14,12 +13,11 @@ const style = {
 };
 
 export const Card = props => {
-  const { isAdmin } = props;
 
   return (
     <div style={style}>
       <p>山田太郎</p>
-      <EditButton isAdmin={isAdmin}/>
+      <EditButton/>
     </div>
   )
 }
